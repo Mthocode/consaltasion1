@@ -1,0 +1,77 @@
+#Businessandrit{
+    width: 60%;
+    height: 90%;
+    grid-template-rows: 0.4fr 1fr;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    border-radius: 12px;
+
+    .close-btn{
+        margin: 5px;
+        width: 10%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        justify-self: end;
+        transition: all 0.3s ease;
+    }
+
+    img{
+        width: 60%;
+        height: 95%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .downloadbusiness{
+        position: fixed;
+        width: 15%;
+        height: 20%;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+.close-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background-color: #f2a65a;
+    color: white;
+}
+
+#communityandind{
+    width: 60%;
+    height: 90%;
+    grid-template-rows: 0.4fr 1fr;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    border-radius: 12px;
+
+    .close-btn{
+        margin: 5px;
+        width: 10%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        justify-self: end;
+        transition: all 0.3s ease;
+    }
+
+    img{
+        width: 60%;
+        height: 95%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .downloadcommunity{
+        position: fixed;
+        width: 15%;
+        height: 20%;
+        justify-self: center;
+        align-self: center;
+    }
+}

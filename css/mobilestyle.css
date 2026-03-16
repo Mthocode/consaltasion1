@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px){
+    .top-bar > nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero {
+        
+        .hero-text{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            "heading heading"
+            "subheading subheading"
+            "button1 button1"
+            "button2 button2";
+        }
+    }
+}

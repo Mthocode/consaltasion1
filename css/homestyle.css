@@ -1,0 +1,277 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.7fr 1.2fr 0.4fr 1.2fr 0.2fr;
+    grid-template-areas: 
+    "mainnav"
+    "hero"
+    "aboutus"
+    "services"
+    "contact"
+    "footer";
+    height: 150%;
+    font-family: 'Open Sans', sans-serif;
+    background: radial-gradient(circle, #fefae0 50%, #946103 100%);
+    color:#333;
+    line-height:1.6;
+}
+
+/*about us sction style*/
+.aboutUssection{
+    grid-area: aboutus;
+    display: grid;
+    grid-template-columns: auto-fit;
+    grid-template-rows: 0.5fr 0.2fr 0.2fr;
+}
+.aboutUssection > #aboutinnersection1{
+    padding-top: 6%;
+
+    p,h1{
+        text-align: center;
+        margin: 15px;
+    }
+
+    ul{
+        width: 30%;
+        position: relative;
+        left: 35%;
+        margin: 15px;
+    }
+}
+.aboutUssection > #aboutinnersection2{
+    /*display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: auto-fit;*/
+
+    background: linear-gradient(to right, #946103, #fefae0), url("/res/image3.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+
+    border-image: linear-gradient(to right, #946103a6, #eee4a5a6) fill 30/ 0px/ 0px;
+    position: relative;
+    padding: 30px;
+    margin-top: 10%;
+
+    #focus{
+        padding-top: 25px;
+        padding-left: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        justify-self: center;
+        align-self: center;
+        border-image: linear-gradient(to right, #946103a6, #eee4a5a6) fill 30/ 0px/ 0px;
+    }
+
+    ::before{
+        content: "Our Focus";
+        background: linear-gradient(to right,#012649, #946103);
+        position: absolute;
+        padding: 3px;
+        top: -5%;
+        left: 0%;
+        width: 55%;
+        height: 15%;
+        font-size: 120%;
+        font-weight: 600;
+        text-align: center;
+        align-content: center;
+        clip-path: polygon(0% 100%, 85% 100%, 100% 0%, 0% 0% );
+        color: #bb9349;
+    }
+}
+.aboutUssection > #aboutinnersection3{
+    padding: 20px;
+    margin: 4%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+       
+
+/*servicess sction style*/
+.services-preview{
+    grid-area: services;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: auto-fit;
+    grid-template-areas: 
+    "business community";
+    gap:25px;
+    margin-top:40px;
+}
+
+#businesscard{
+    grid-area: business;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding: 10%;
+    background: linear-gradient(to right, #946103a6, #eee4a5a6);
+    color: #012649;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    font-family:'Montserrat', sans-serif;
+    margin-bottom:10px;
+    box-shadow: 6px 8px 5px rgba(0,0,0,0.1);
+}
+
+#businesscard::before{
+    content: "Business & Retail Services";
+    background: linear-gradient(to right,#012649, #946103);
+    position: absolute;
+    padding: 3px;
+    top: -10%;
+    left: 0%;
+    width: 55%;
+    height: 15%;
+    font-size: 120%;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    clip-path: polygon(0% 100%, 85% 100%, 100% 0%, 0% 0% );
+    color: #bb9349;
+}
+
+#communitycard{
+    grid-area: community;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    padding: 10%;
+    background: linear-gradient(to right, #946103a6, #eee4a5a6);
+    color: #012649;
+    box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    font-family:'Montserrat', sans-serif;
+    margin-bottom:10px;
+    box-shadow: 6px 8px 5px rgba(0,0,0,0.1);
+}
+
+#communitycard::before{
+    content: "Community & Individual Suppor";
+    background: linear-gradient(to right,#012649, #946103);
+    position: absolute;
+    padding: 3px;
+    top: -10%;
+    left: 0%;
+    width: 65%;
+    height: 15%;
+    font-size: 120%;
+    font-weight: 600;
+    text-align: center;
+    align-content: center;
+    clip-path: polygon(0% 100%, 85% 100%, 100% 0%, 0% 0% );
+    color: #bb9349;
+}
+
+/*contact sction style*/
+.contactection{
+    grid-area: contact;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr 0.2fr 2.5fr;
+
+    :nth-child(1){
+        padding: 15px;
+        align-content: center;
+        text-align: center;
+    }
+
+    :nth-child(2){
+        padding: 10px;
+        align-content: center;
+        display: grid;
+        /*grid-template-columns: minmax(1fr,repeat(2, 1fr));
+        /*grid-template-rows: minmax(1fr,repeat(5, 1fr));*/
+        grid-template-columns: repeat(auto-fit,minmax(15px,1fr));
+        grid-template-rows: repeat(auto-fit, minmax(3px,1fr));
+        grid-template-areas: 
+        "username useremail"
+        "usernumbers usernumbers"
+        "usermassege usermassege"
+        "submit submit";
+        gap: 5px;
+        background:white;
+        border-radius:10px;
+        
+
+        #name{
+            grid-area: username;
+            padding: 12px;
+            height: 30%;
+            margin-bottom:15px;
+            border:1px solid #ddd;
+            border-radius:6px;
+            font-family:'Open Sans', sans-serif;
+        }
+        #email{
+            grid-area: useremail;
+            height: 30%;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ddd;
+            border-radius:6px;
+            font-family:'Open Sans', sans-serif;
+        }
+        #numbers{
+            grid-area: usernumbers;
+            height: 30%;
+            padding:12px;
+            margin-bottom:15px;
+            border:1px solid #ddd;
+            border-radius:6px;
+            font-family:'Open Sans', sans-serif;
+        }
+        #message{
+            grid-area: usermassege;
+            width: 98%;
+            height: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family:'Open Sans', sans-serif;
+        }
+        .btn{
+            grid-area: submit;
+            justify-self: center;
+            align-self: center;
+            height: 50%;
+            border:none;
+            padding:12px 20px;
+            color:white;
+            font-family:'Montserrat', sans-serif;
+            font-weight:600;
+            border-radius:6px;
+            cursor:pointer;
+        }
+    }
+    :nth-child(3){
+        padding: 15px;
+        justify-content: center;
+        align-content: center;
+    }
+    :nth-child(4){
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        height: 112%;
+    }
+}
+
+/*footer sction style*/
+footer{
+    grid-area: footer;
+    background:#2c3e50;
+    color:white;
+    padding:25px 0;
+    text-align:center;
+    margin-top:40px;
+}
