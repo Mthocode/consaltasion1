@@ -29,8 +29,8 @@ body.fade-out {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(0.2fr, 0.2fr));
     grid-template-areas:
-    "logop contectnumber"
-    "logop nevcon";
+    "logop contectnumber contectnumber"
+    "logop nevcon mobile_nav";
     box-shadow: 10px 15px 15px rgba(0,0,0,0.1);
 }
 
@@ -79,6 +79,22 @@ body.fade-out {
         &:hover{
           color:#d18943;
         }
+    }
+}
+
+.top-bar > #mobile_nav{
+    display: block;
+    grid-area: mobile_nav;
+    background-color: yellowgreen;
+    justify-self: end;
+    align-self: center;
+    margin-right: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+
+    .fa-xmark{
+        display: none;
     }
 }
 
