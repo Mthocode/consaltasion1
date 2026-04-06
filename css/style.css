@@ -30,7 +30,7 @@ body.fade-out {
     grid-template-rows: repeat(auto-fit, minmax(0.2fr, 0.2fr));
     grid-template-areas:
     "logop contectnumber contectnumber"
-    "logop nevcon mobile_nav";
+    "logop nevcon nevcon";
     box-shadow: 10px 15px 15px rgba(0,0,0,0.1);
 }
 
@@ -82,20 +82,48 @@ body.fade-out {
     }
 }
 
-.top-bar > #mobile_nav{
-    display: block;
-    grid-area: mobile_nav;
-    background-color: yellowgreen;
-    justify-self: end;
-    align-self: center;
-    margin-right: 20px;
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
+.active{
+    position: absolute;
+    top: 18px;
+    width: 100vh;
+    height: 100vh;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+    z-index: 999;
+    background: #e6daa8;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
 
-    .fa-xmark{
-        display: none;
-    }
+.fa-bars, .fa-xmark{
+  display: none;
+  position:absolute;
+  justify-self: center;
+  align-self: center;
+}
+
+.fa-download{
+  display: block;
+  position:absolute;
+  justify-self: center;
+  align-self: center;
+  left: 10%;
+  transform: translateY(-50%);
+  font-size: 124px;
+  border: solid 2px #e0e0e0;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgba(44, 44, 44, 0.514);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-download:hover{
+  border: solid 2px #f8c566;
+  color: #f8c566;
+  transform: scale(1);
 }
 
 /* Shadow appears when scrolling */
