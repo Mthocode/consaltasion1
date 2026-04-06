@@ -42,10 +42,6 @@ body{
     }
 }
 .aboutUssection > #aboutinnersection2{
-    /*display: grid;
-    grid-template-columns: 1.5fr 0.5fr;
-    grid-template-rows: auto-fit;*/
-
     background: linear-gradient(to right, #946103, #fefae0), url("/res/image3.jpg");
     background-position: right;
     background-repeat: no-repeat;
