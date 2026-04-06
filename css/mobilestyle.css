@@ -4,6 +4,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.4fr 1fr 0.4fr 0.4fr 0.5fr;
     }
+    
     .top-bar > #mobile_nav{
         display: block;
         position:absolute;
@@ -12,7 +13,7 @@
         left: 90%;
         margin-right: 20px;
         font-size: 24px;
-        color: #333;
+        color: #797979;
         cursor: pointer;
     }
 
@@ -62,4 +63,32 @@
         }
     }
     
+    .hero {
+        .hero-text{
+            #btn1{
+                grid-area: button1; 
+                justify-self: center;
+                align-self: center;
+            }
+        }
+    }
+
+    .btn.outline {
+        grid-area: button2;
+        justify-self: center;
+    }
+
+    .btn {
+        text-align: center;
+        font-weight: 600;
+        font-size: 11px;
+    }
+
+    #businesscard::before {
+        font-size: 100%;
+    }
+
+    #communitycard::before {
+        font-size: 60%;
+    }
 }
