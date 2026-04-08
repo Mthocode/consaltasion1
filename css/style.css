@@ -136,7 +136,7 @@ body.fade-out {
 }
 
 .hero {
-  background: linear-gradient(to right, #946103b0, #fefae06b), url("/res/image2.jpg");
+  background: linear-gradient(to right, #946103b0, #fefae06b), url("../res/hero1.png");
   background-position: right;
   background-repeat: no-repeat;
   background-blend-mode: multiply;
