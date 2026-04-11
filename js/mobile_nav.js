@@ -6,7 +6,7 @@ barsIcon.addEventListener('click', () => {
     
         console.log('Bars icon clicked');
         navMenu.classList.add('active');
-        navMenu.style.display = 'block';
+        navMenu.style.display = 'flex';
         barsIcon.style.display = 'none';
         xmarkIcon.style.display = 'block';
     });
